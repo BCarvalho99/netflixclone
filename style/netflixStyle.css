@@ -1,0 +1,163 @@
+:root{
+    /*Distribuição das variaveis*/
+    --red: #E50914;
+    --black: #141414;
+} 
+    
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+body{
+    background-color: var(--black);
+    font-family: 'Arial', Times, serif;
+    color: #FFF;
+    
+}
+/* [ INICIO ] - Todo o conteúdo do cabeçalho da página*/
+.container-all{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    color: var(--red);
+    font-family: 'Arial Black';
+    font-size: 40px;
+    margin-left: 10px;
+    
+}
+
+
+header nav .menuOpt{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+header nav a:hover{
+    color: #FFF;
+}
+/* [ FIM ] - Todo o conteúdo do cabeçalho da página*/
+
+/* [ INICIO ] - Cartaz principal*/
+.main-movie{
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), 
+    url('../imgs/knightfall_background.jpg') no-repeat;
+    background-size: cover;
+    height: 400px;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+div .container{
+    display: block;
+    margin-left: 2%;
+    margin-bottom: 4%;
+    margin-top: 10%;
+    text-align: justify;
+
+}
+
+div .main-title{
+    font-size: 42px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.description{
+    margin-top: 2%;
+    margin-bottom: 4%;
+    letter-spacing: 0.1px;
+    line-height: 1.4;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    
+}
+
+.btn{
+    background-color: rgba(0, 0, 0, 0.74);
+    border: none;
+    color: #FFF;
+    padding: 15px;
+    margin-right: 15px;
+    transition: 0.8s;
+    
+}
+
+.btn:hover{
+    background-color: rgb(255, 255, 255);
+    border: none;
+    color: #000;
+    padding: 15px;
+    margin-right: 15px;
+}
+
+/*Cartazes dos filmes no carrossel*/
+
+.movie-box{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.movie-carousel{
+    padding: 0.4%;
+}
+
+.carousel-title{
+    margin-bottom: 6%;
+    margin-left: 0.5%;
+    display: flex;
+    font-family: 'Arial', Verdana, Geneva, Tahoma, sans-serif;
+    color: rgba(255, 255, 255, 0.904);
+  
+
+    
+
+}
+
+h3{
+    font-size: 16pt;
+}
+
+/*Estilo do Modal*/
+.modal{
+    margin-top: 14%;
+}
+.modal-header{
+    display: flex;
+    justify-content: flex-end;
+    border-bottom:none;
+    padding: 0;
+    border-top: 2px  solid var(--red);
+}
+.close {
+    width: 50px;
+    border: none;
+    background-color: #141414;
+    color: #FFF;
+    font-size: 20pt;
+    font-weight: bold;
+
+}
+.close:hover {
+    color: var(--red);
+}
+.modal-content{
+    background-color: #141414c4;
+    color: #FFF;
+}
+
+.modal-body{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border-bottom: 2px  solid var(--red);
+    display: inline-flex;
+}
+.far{
+    margin-right: 10px;
+    font-size: 20pt;
+    margin-top: -2px;
+}

@@ -1,0 +1,23 @@
+@media screen and (max-width: 800px){
+    .container-all{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .btn{
+        margin-top: 2%;
+        width: 330px;
+        height: 40px;
+    }
+
+    .carousel-title{
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1000px){
+    .description{
+        width: 50%;
+    }
+
+}

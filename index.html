@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="./style/netflixStyle.css">
+    <link rel="stylesheet" href="style/responsive.css">
+    <title>NETFLIX CLONE</title>
+</head>
+<body>
+    <header class="container-all"> <!--Cabeçalho da página-->
+        <h1 class="logo">NETFLIX</h1> 
+        <nav>
+            <a href="#" class="menuOpt">Inicio</a>
+            <a href="#" class="menuOpt">Séries</a>
+            <a href="#" class="menuOpt">Filmes</a>
+            <a href="#" class="menuOpt">Documentarios</a>
+        </nav>
+    </header>
+    <main> <!--Conteúdo do cartaz principal da página-->
+        <div class="main-movie">
+            <div class="container">
+                <h3 class="main-title">KNIGHTFALL</h3>
+                <p class="description">Na Idade Média, a Ordem dos Cavaleiros Templários ganha poder e riqueza pelos feitos realizados, gerando desavenças na Europa. O rei Filipe IV da França fica muito incomodado com a situação e ordena a perseguição deles, que começa na sexta-feira, 13 de outubro de 1307, 
+                    data que virou um mito e que teria dado origem à crença da sexta-feira ser um dia amaldiçoado.
+                </p>
+                    
+                    <div class="mainbtn"> <!--Botões do filme principal-->
+                        <button class="btn"> 
+                        <i class="fas fa-play"></i> ASSISTA AGORA </button>
+                        <button class="btn" data-toggle="modal" data-target="#listaModal"> 
+                        <i class="fas fa-plus"></i> ADICIONAR A MINHA LISTA</button>
+                        
+                    </div>
+                </div>
+                <div class="carousel-title"><!--Titulo das trendings do carrossel-->
+                <h3>Trending Now</h3>
+                </div>
+        </div>
+    </main>
+
+    
+   <div class="movie-carousel"><!--Conteúdo do carrossel-->
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img src="/imgs/poster01.jpg" alt="The Witcher" class="movie-box">
+            </div>
+
+            <div class="item">
+                <img src="/imgs/poster02.jpg" alt="Dracula" class="movie-box">
+            </div>
+
+            <div class="item">
+                <img src="/imgs/poster03.jpg" alt="Gladiator" class="movie-box">
+            </div>
+
+            <div class="item">
+                <img src="/imgs/poster04.jpg" alt="Ryan" class="movie-box">
+            </div>
+
+            <div class="item">
+                <img src="/imgs/poster05.jpg" alt="Troy" class="movie-box">
+            </div>
+
+            <div class="item">
+                <img src="/imgs/poster06.jpg" alt="300" class="movie-box">
+            </div>
+
+            <div class="item">
+                <img src="/imgs/poster07.jpg" alt="Indiana" class="movie-box">
+            </div>
+            
+            <div class="item">
+                <img src="/imgs/poster08.jpg" alt="Ghostbusters" class="movie-box">
+            </div>
+
+            <div class="item">
+                <img src="/imgs/poster09.jpg" alt="Future" class="movie-box">
+            </div>
+
+            <div class="item">
+                <img src="/imgs/poster10.jpg" alt="FightClub" class="movie-box">
+            </div>
+            
+        </div>
+    </div>
+
+<!--Conteudo do modal-->
+
+<div class="modal fade" id="listaModal" tabindex="-1">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+
+            <div class="modal-header">  
+                <button type="button" class="close" data-dismiss="modal">
+                    <span>&times;</span>
+                </button>
+            </div>
+
+            <div class="modal-body">
+                <i class="far fa-check-circle"></i>  <p>CONTEÚDO ADICIONADO A SUA LISTA COM SUCESSO</p>
+            </div>
+
+           
+        </div>
+    </div>
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+
+
+<script src="https://kit.fontawesome.com/6391f449a2.js" crossorigin="anonymous"></script>
+<script src="js/owl/jquery.min.js"></script>
+<script src="js/owl/owl.carousel.min.js"></script>
+<script src="/js/main.js"></script>
+</body>
+</html> 
